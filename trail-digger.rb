@@ -5,13 +5,13 @@
 class TrailDigger < Formula
   desc "trail-digger is a tool for digging trail log files of AWS CloudTrail."
   homepage "https://github.com/pepabo/trail-digger"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pepabo/trail-digger/releases/download/v0.2.1/trail-digger_v0.2.1_darwin_arm64.zip"
-      sha256 "32362c18690b8899b6b9c6541a9fd3b5f3ba011d6f5be286d05c837b8a77daad"
+      url "https://github.com/pepabo/trail-digger/releases/download/v0.2.2/trail-digger_v0.2.2_darwin_arm64.zip"
+      sha256 "1922604b4b02d36ebec5772af23784312c87f1a8a51931e326a16c2c8091e5c4"
 
       def install
         bin.install 'trail-digger'
@@ -22,8 +22,8 @@ class TrailDigger < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pepabo/trail-digger/releases/download/v0.2.1/trail-digger_v0.2.1_darwin_amd64.zip"
-      sha256 "056946f050d8455c1dc33f196dfe64c6545b30353837ee3f30e883ee426f3aa7"
+      url "https://github.com/pepabo/trail-digger/releases/download/v0.2.2/trail-digger_v0.2.2_darwin_amd64.zip"
+      sha256 "71d6fd2b36904ffe830f406bef5a20238192e2e2e1ac457ceda619855597e51b"
 
       def install
         bin.install 'trail-digger'
@@ -37,8 +37,8 @@ class TrailDigger < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/pepabo/trail-digger/releases/download/v0.2.1/trail-digger_v0.2.1_linux_amd64.tar.gz"
-      sha256 "38a774c5dfcc0874e193b964a0344711106cd707ca921f41ff0efa2b94d91401"
+      url "https://github.com/pepabo/trail-digger/releases/download/v0.2.2/trail-digger_v0.2.2_linux_amd64.tar.gz"
+      sha256 "c72c6d6744405869307ad97c2903f1d04565e6fd0a342ad6dbe59ddd31ce4887"
 
       def install
         bin.install 'trail-digger'
