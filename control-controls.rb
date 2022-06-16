@@ -5,13 +5,13 @@
 class ControlControls < Formula
   desc "control-controls control controls of AWS Security Hub across all regions."
   homepage "https://github.com/pepabo/control-controls"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/pepabo/control-controls/releases/download/v0.5.0/control-controls_v0.5.0_darwin_arm64.zip"
-      sha256 "e7bd5e17c0e64336cfc79cfe6781f7d0495371df21248d50582bb3666be269e1"
+      url "https://github.com/pepabo/control-controls/releases/download/v0.6.0/control-controls_v0.6.0_darwin_arm64.zip"
+      sha256 "0fa99b1cf1a00969de56491c958d5acd1aa0e3112de01931cd31820a64ab08a2"
 
       def install
         bin.install 'control-controls'
@@ -22,8 +22,8 @@ class ControlControls < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/pepabo/control-controls/releases/download/v0.5.0/control-controls_v0.5.0_darwin_amd64.zip"
-      sha256 "db4328d0d44e51bb8f397d055e7dadd67547cd1ac5cd88b85c78f5fd41c1a098"
+      url "https://github.com/pepabo/control-controls/releases/download/v0.6.0/control-controls_v0.6.0_darwin_amd64.zip"
+      sha256 "367a0ee874fd138a1e8b71249001edd8bab6d118f906fa99d7c60f5acee8644c"
 
       def install
         bin.install 'control-controls'
@@ -37,8 +37,8 @@ class ControlControls < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/pepabo/control-controls/releases/download/v0.5.0/control-controls_v0.5.0_linux_amd64.tar.gz"
-      sha256 "b74b2e8d104d327a9476ac9d7313a55f950a1718577f13512bc1b1497eed88f1"
+      url "https://github.com/pepabo/control-controls/releases/download/v0.6.0/control-controls_v0.6.0_linux_amd64.tar.gz"
+      sha256 "3f2a4d6c63e004fcd7c125733d15fec10b3b1224401312c268e5130e22ed162b"
 
       def install
         bin.install 'control-controls'
