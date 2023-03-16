@@ -5,7 +5,7 @@ update/%:
 	maltmill -w $*.rb
 
 create/%:
-	maltmill new -w k1LoW/$*
+	maltmill new -w pepabo/$*
 
 update-all:
 	grep -l darwin *.rb | xargs -n 1 maltmill -w
