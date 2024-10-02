@@ -1,27 +1,27 @@
 class Cwlq < Formula
   desc 'cwlq is a tool/package for querying logs (of Amazon CloudWatch Logs) stored in various datasources.'
-  version '0.1.0'
+  version '0.6.1'
   homepage 'https://github.com/pepabo/cwlq'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/pepabo/cwlq/releases/download/v0.1.0/cwlq_v0.1.0_darwin_arm64.zip'
-      sha256 '36213a86e769f4b515e025e3b7d05a1e6fe3b71abb3bc511530bf373f5bd2667'
+      url 'https://github.com/pepabo/cwlq/releases/download/v0.6.1/cwlq_v0.6.1_darwin_arm64.zip'
+      sha256 'ce3288215bf892bb075ee160b17981915342764adeb645c1beeff059dc73c9bc'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/pepabo/cwlq/releases/download/v0.1.0/cwlq_v0.1.0_darwin_amd64.zip'
-      sha256 '6e40719457c961f70384e9bc0f52a5b71cd116728d1e41c402ff476f6fb30c44'
+      url 'https://github.com/pepabo/cwlq/releases/download/v0.6.1/cwlq_v0.6.1_darwin_amd64.zip'
+      sha256 '4e704abd9d32fe476fe25d96de0957adeee3416ff00bedd436ef7feca1d24fbb'
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url 'https://github.com/pepabo/cwlq/releases/download/v0.1.0/cwlq_v0.1.0_linux_arm64.tar.gz'
-      sha256 'ca33c7486d56b61714a909cb6f433044fde1c5076db5bcf62836ebf29fbb63f3'
+      url 'https://github.com/pepabo/cwlq/releases/download/v0.6.1/cwlq_v0.6.1_linux_arm64.tar.gz'
+      sha256 'a223ea5fc77a4ef4316cbc6840f84707030165b224eba2d5ec4e83118707a0e7'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/pepabo/cwlq/releases/download/v0.1.0/cwlq_v0.1.0_linux_amd64.tar.gz'
-      sha256 '73054a50fcd4b4516b830ff2d0509718010f91e742bccba2ee681966cc208572'
+      url 'https://github.com/pepabo/cwlq/releases/download/v0.6.1/cwlq_v0.6.1_linux_amd64.tar.gz'
+      sha256 '0e5f85b7996e30544aa0da095d654a625155b3ce2c8d21f5385f49660f165cf2'
     end
   end
 

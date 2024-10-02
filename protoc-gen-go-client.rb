@@ -1,23 +1,23 @@
 class ProtocGenGoClient < Formula
   desc 'protoc-gen-go-client is a protoc plugin that generates a client that compiles gRPC clients for multiple services.'
-  version '0.0.1'
+  version '0.3.0'
   homepage 'https://github.com/pepabo/protoc-gen-go-client'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/pepabo/protoc-gen-go-client/releases/download/v0.0.1/protoc-gen-go-client_v0.0.1_darwin_arm64.zip'
-      sha256 '921c864c66a0976bae0908be861b3976cd9765726f73fb65ecd575ff41465f65'
+      url 'https://github.com/pepabo/protoc-gen-go-client/releases/download/v0.3.0/protoc-gen-go-client_v0.3.0_darwin_arm64.zip'
+      sha256 '99d26e1284c1974a08ac8daed9f339c0a1261b401ff6769b1ffdeb4705be7d7b'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/pepabo/protoc-gen-go-client/releases/download/v0.0.1/protoc-gen-go-client_v0.0.1_darwin_amd64.zip'
-      sha256 '8631b04e71c0dd07a8988c1399a45907221fa2b28b9f3855dbf149c78d1c6d1e'
+      url 'https://github.com/pepabo/protoc-gen-go-client/releases/download/v0.3.0/protoc-gen-go-client_v0.3.0_darwin_amd64.zip'
+      sha256 'aa99a0308024dc0118b06edc1bd31aacc9332d18cc56fb314ad38e5893257cbe'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/pepabo/protoc-gen-go-client/releases/download/v0.0.1/protoc-gen-go-client_v0.0.1_linux_amd64.tar.gz'
-      sha256 '0f879827782628a008fb27fcee0c0f3a9f0cc26aaae499b3ddd93df39918b90b'
+      url 'https://github.com/pepabo/protoc-gen-go-client/releases/download/v0.3.0/protoc-gen-go-client_v0.3.0_linux_amd64.tar.gz'
+      sha256 'af9f9965182f65090a4fe2ec2e21f800f5ca0b9ab155ff0b33df12730ba61bf6'
     end
   end
 

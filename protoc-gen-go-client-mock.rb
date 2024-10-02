@@ -1,23 +1,23 @@
 class ProtocGenGoClientMock < Formula
   desc 'protoc-gen-go-client-mock is a protoc plugin that generates a mock of client that bundles gRPC Clients for multiple services.'
-  version '0.1.0'
+  version '0.3.0'
   homepage 'https://github.com/pepabo/protoc-gen-go-client-mock'
 
   on_macos do
     if Hardware::CPU.arm?
-      url 'https://github.com/pepabo/protoc-gen-go-client-mock/releases/download/v0.1.0/protoc-gen-go-client-mock_v0.1.0_darwin_arm64.zip'
-      sha256 'b6aba45d74651ecf36737b4b0ccd663a2aec7a2012e385224cefedc4efffb358'
+      url 'https://github.com/pepabo/protoc-gen-go-client-mock/releases/download/v0.3.0/protoc-gen-go-client-mock_v0.3.0_darwin_arm64.zip'
+      sha256 'acc1e9583becef84b4fc69599ebed2159358c30c8d0ca99f08c5045d29dc38e8'
     end
     if Hardware::CPU.intel?
-      url 'https://github.com/pepabo/protoc-gen-go-client-mock/releases/download/v0.1.0/protoc-gen-go-client-mock_v0.1.0_darwin_amd64.zip'
-      sha256 'd8f8bfed6c8db2910a2ae2e7f4d2406a69ef99e87dc92c3c16aa65c72ac9af20'
+      url 'https://github.com/pepabo/protoc-gen-go-client-mock/releases/download/v0.3.0/protoc-gen-go-client-mock_v0.3.0_darwin_amd64.zip'
+      sha256 '07176dcffa383bc47a507699c399838f064bcc56e19f4fa2443a5377d7e7e5a8'
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url 'https://github.com/pepabo/protoc-gen-go-client-mock/releases/download/v0.1.0/protoc-gen-go-client-mock_v0.1.0_linux_amd64.tar.gz'
-      sha256 'ef11ef83079cef8324ae44ec4304033fdbcc5c90ef19dc8ae901db3af07db67e'
+      url 'https://github.com/pepabo/protoc-gen-go-client-mock/releases/download/v0.3.0/protoc-gen-go-client-mock_v0.3.0_linux_amd64.tar.gz'
+      sha256 '957143bad032aeb5863e6f460b90c61742cfa0d2fae65ab26178bdfbd2f568fa'
     end
   end
 
